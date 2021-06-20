@@ -29,6 +29,17 @@ nav li > a:hover{
     text-decoration: underline;
 }
 
+.button_style.blue_bg > a{
+    color: white;
+}
+
+/* GRANDEZZE */
+
+.w_85{
+    width: 85%;
+    margin: auto;
+}
+
 /* BUTTON */
 
 .button_style{
@@ -45,10 +56,6 @@ nav li > a:hover{
 .button_style > a{
     font-size: 1.1vw;
     text-decoration: none;
-}
-
-.button_style.blue_bg > a{
-    color: white;
 }
 
 /* / BUTTON */
@@ -80,8 +87,12 @@ header{
     padding: 0 1%;
 }
 
+header  section{
+    height: 100%;
+}
+
 section .logo{
-    height: 50%;
+    height: 30%;
     vertical-align: middle;
 }
 
@@ -102,4 +113,52 @@ header nav li a{
     font-size: 1.1vw;
 }
 
-/* HEADER */
+/* / HEADER */
+
+/* Jumbotron */
+
+section.jumbotron{
+    background-color: #B4D0E7;
+}
+
+.jumbotron h1{
+    font-size: 5vw;
+    padding: 8vh 0 5vh;
+}
+
+.jumbotron .text_box{
+    width: 35%;
+}
+
+.jumbotron .img_box{
+    width: 65%;
+}
+
+.jumbotron .img_box > img{
+    width: 100%;
+}
+
+/* Text_box */
+
+.jumbo_box > .text_box{
+    padding-right: 6%;
+    text-align: left;
+}
+
+.jumbotron p:first-of-type{
+    font-size: 1.1vw;
+    font-weight: 500;
+    margin: 0 0 6%;
+}
+
+.jumbotron p:last-of-type{
+    font-size: 0.9vw;
+    margin: 2% 0 13%;
+}
+
+.jumbotron .fas.fa-arrow-down{
+    font-size: 3vw;
+}
+
+
+/* / Jumbotron */
