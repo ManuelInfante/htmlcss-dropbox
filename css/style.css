@@ -23,30 +23,43 @@ body{
 
 .float_dx{
     float: right;
-}  
-
-nav li > a:hover{
-    text-decoration: underline;
-}
-
-.button_style.blue_bg > a{
-    color: white;
 }
 
 /* GRANDEZZE */
 
-.w_85{
-    width: 85%;
+.w_90{
+    width: 90%;
     margin: auto;
+}
+
+.w_80{
+    width: 80%;
+    margin: auto;
+}
+
+div.side{
+    width: calc((100% / 3) - 2.5vw);
+}
+
+div.side:first-child{
+    margin-right: 2.5vw;
+}
+
+div.side:last-child{
+    margin-left: 2.5vw;
+}
+
+div.middle{
+    width: calc((100% / 3) - 2.5vw);
+    margin: 0 1.25vw;
 }
 
 /* BUTTON */
 
 .button_style{
-    font-size: 1.1vw;
     border: none;
     transition: transform .4s;
-    padding: 10px 20px
+    padding: 10px 20px;
 }
 
 .button_style:hover{
@@ -58,9 +71,23 @@ nav li > a:hover{
     text-decoration: none;
 }
 
+.button_style.blue_bg > a{
+    color: white;
+}
+
+.button_style.white_bg{
+    border: 2px solid black;
+}
+
+.button_style.white_bg > a{
+    color: black;
+}
 /* / BUTTON */
 
 /* BACKGROUND COLOR */
+.white_bg{
+    background-color: white;
+}
 
 .blue_bg{
     background-color: #0361FF;
@@ -82,17 +109,15 @@ nav li > a:hover{
 /* HEADER */
 
 header{
-    height: 80px;
-    line-height: 80px;
     padding: 0 1%;
 }
 
 header  section{
-    height: 100%;
+    line-height: 80px;
 }
 
-section .logo{
-    height: 30%;
+header .logo{
+    height: 20%;
     vertical-align: middle;
 }
 
@@ -105,12 +130,17 @@ header nav li{
     display: inline-block;
     margin: 0 1vw;
     vertical-align: middle;
+    border-bottom: 2px solid transparent;
 }
 
 header nav li a{
     text-decoration: none;
     color: black;
-    font-size: 1.1vw;
+    font-size: 1.2vw;
+}
+
+header nav li:hover{
+    border-bottom: 2px solid black;
 }
 
 /* / HEADER */
@@ -160,5 +190,167 @@ section.jumbotron{
     font-size: 3vw;
 }
 
-
 /* / Jumbotron */
+
+/* Pricing table section */
+
+#pricing_table h2{
+    padding: 20vh 0 5vh;
+    font-size: 3vw;
+}
+
+#pricing_table form > label{
+    padding-right: 1vw;
+}
+
+/* Pricing columns style*/
+
+.plan_box > .clearfix{
+    padding: 5vh 0;
+}
+
+div.plan_column{
+    border: 1px solid gray;
+}
+
+/* Pricing column*/
+
+div.target_plan{
+    text-align: center;
+    padding: 2vh 0;
+    border-bottom: 1px solid gray;
+    font-size: 1.2vw;
+} 
+/* PLAN COLUMN CONTENT */
+div.target_plan{
+    text-align: center;
+    padding: 2vh 0;
+    border-bottom: 1px solid gray;
+    font-size: 1.2vw;
+} 
+
+div.plan_content{
+    padding: 2.5vw 2vw;
+}
+    /* Plan specifiche: nome, prezzo, ricorrenza */
+    div.plan_specs > h3{
+        font-size: 2vw;
+    }
+
+    div.plan_specs p:nth-child(2){
+        font-size: 1.2vw;
+        font-weight: 700;
+        padding: 2vh 0 1vh;
+    }
+
+    div.plan_specs p:last-child:not(#enterprise .plan_specs > p:last-child){
+        color: gray;
+        font-size: 1vw;
+    }
+
+    /* Features */
+    div.plan_features{
+        padding: 4vh 0;
+    }
+
+    div.plan_features > .clearfix{
+        padding: 2vh 0;
+    }
+
+    div.plan_content .clearfix > div:first-child{
+        width: 6%;
+    }
+
+    div.plan_content .clearfix > div:last-child{
+        width: 94%;
+    }
+
+    /* CTA plan */
+    div.cta_plan > button{
+        width: 100%;
+    }
+
+    div.cta_plan > p{
+        padding: 6vh 0 4vh;
+    }
+
+    div.cta_plan > p > a{
+        color: #0361FF;
+    }
+
+    /* HR */
+
+    div.plan_content hr{
+        border: 1px solid rgb(209, 209, 209);
+        width: 20%;
+    }
+
+    /* Hotpoints */
+    div.hotpoints_plan{
+        padding: 5vh 0;
+        height: 80vh;
+    }
+
+    div.hotpoints_plan h4{
+        font-size: 1.3vw;
+        padding: 2vh 0;
+    }
+
+    div.hotpoints_plan ul li{
+        list-style: none;
+        padding: 2vh 0;
+    }
+
+    div.hotpoints_plan ul li i{
+        color: #0361FF;
+    }
+
+    /* Enterprice plan section */
+
+    #enterprise .plan_specs{
+        width: 60%;
+    }
+
+    #enterprise .cta_plan{
+        width: 40%;
+    }
+
+    /* / Pricing column content*/
+
+/* /Pricing columns style*/
+
+/* / Pricing table section */
+
+/* PARTNER CTA SECTION*/
+
+#partner_cta{
+    padding: 25vh 0 15vh;
+}
+
+#partner_cta .img_box{
+    width: 50%;
+}
+
+#partner_cta .cta_text{
+    width: 50%;
+}
+
+#partner_cta .img_box > img{
+    width: 100%;
+}
+
+#partner_cta .cta_text{
+    padding: 3vw;
+}
+
+#partner_cta .cta_text > h3{
+    font-size: 2vw;
+}
+
+#partner_cta .cta_text > p{
+    padding: 4vh 0 3vh;
+}
+
+/* / PARTNER CTA SECTION*/
+
+
