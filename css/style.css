@@ -353,4 +353,33 @@ div.plan_content{
 
 /* / PARTNER CTA SECTION*/
 
+/* DROPBOX FEATURES */
 
+#dropbox_features img{
+    width: 100%;
+}
+
+#dropbox_features h2{
+    font-size: 3vw;
+    padding-bottom: 10vh;
+}
+
+#dropbox_features div.row{
+    padding-bottom: 15vh;
+}
+
+#dropbox_features .row h3{
+    font-size: 2vw;
+    padding-bottom: 5vh;
+}
+
+#dropbox_features .row p{
+    font-size: 1.2vw;
+}
+
+#dropbox_features .row p > span{
+    text-decoration: underline;
+}
+/* DROPBOX FEATURES */
+
+/* DROPBOX FEATURES */
