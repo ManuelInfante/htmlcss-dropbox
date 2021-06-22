@@ -71,7 +71,7 @@ div.middle{
     text-decoration: none;
 }
 
-.button_style.blue_bg > a{
+.button_style.light-blue_bg > a{
     color: white;
 }
 
@@ -89,16 +89,51 @@ div.middle{
     background-color: white;
 }
 
-.blue_bg{
+.light-blue_bg{
     background-color: #0361FF;
 }
 
+.blue_bg{
+    background-color: #0E2381;
+}
+
+.green_bg{
+    background-color: #A2D39B;
+}
+
+.bordeaux_bg{
+    background-color: #62092B;
+}
+
+.sugar-paper_bg{
+    background-color: #B4D0E7;
+}
+
+.light-red_bg{
+    background-color: #FF1C1C;
+}
+
+.dark-red_bg{
+    background-color: #D5011F;
+}
+
+.yellow_bg{
+    background-color: #FFD82F;
+}
+
+.light-gray_bg{
+    background-color: #F5F5F5;
+}
 /* / BACKGROUND COLOR */
 
 /* TEXT COLOR */
 
 .bordeaux_text{
     color: #62092B;
+}
+
+.light-blue_text{
+    color: #0361FF;
 }
 
 /* / TEXT COLOR */
@@ -146,10 +181,6 @@ header nav li:hover{
 /* / HEADER */
 
 /* Jumbotron */
-
-section.jumbotron{
-    background-color: #B4D0E7;
-}
 
 .jumbotron h1{
     font-size: 5vw;
@@ -380,6 +411,62 @@ div.plan_content{
 #dropbox_features .row p > span{
     text-decoration: underline;
 }
-/* DROPBOX FEATURES */
 
-/* DROPBOX FEATURES */
+/* /DROPBOX FEATURES */
+
+
+/* Behaviors section */
+
+div.discover_clients_cta > h2{
+    width: 50%;
+    font-size: 5vh;
+}
+
+div.discover_clients_cta > p{
+    padding: 5vh 0;
+}
+
+/* LOGOS and review section */
+#behaviors .logos{
+    width: 30vw;
+}
+
+#behaviors .logos .logo_container{
+    width: 15vw;
+    height: 15vw;
+    line-height: 15vw;
+    text-align: center;
+}
+
+#behaviors .logos .logo_container > img{
+    width: 55%;
+    vertical-align: middle;
+    filter: invert(1);
+}
+
+#behaviors .review{
+    width: calc(100% - 60vw);
+    height: 30vw;
+    padding: 4vw 5vh;
+    overflow-y: scroll;
+}
+
+#behaviors .review > img{
+    height: 5vh;
+    margin-bottom: 4vh;
+}
+
+#behaviors .review hr{
+    border-color: lightgray;
+    width: 10%;
+}
+
+#behaviors .review > p:first-of-type{
+    padding: 8vh 0 9vh;
+    font-size: 1.3vw;
+}
+
+#behaviors .review > p:last-of-type{
+    font-size: 1.5vw;
+}
+/* Behaviors section */
