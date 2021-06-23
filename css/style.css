@@ -75,10 +75,6 @@ div.middle{
     color: white;
 }
 
-.button_style.white_bg{
-    border: 2px solid black;
-}
-
 .button_style.white_bg > a{
     color: black;
 }
@@ -382,6 +378,9 @@ div.plan_content{
     padding: 4vh 0 3vh;
 }
 
+div.cta_text .button_style.white_bg{
+    border: 2px solid black;
+}
 /* / PARTNER CTA SECTION*/
 
 /* DROPBOX FEATURES */
@@ -469,4 +468,37 @@ div.discover_clients_cta > p{
 #behaviors .review > p:last-of-type{
     font-size: 1.5vw;
 }
-/* Behaviors section */
+/* / Behaviors section */
+
+/* Promo banner */
+
+#promo_banner{
+    height: 30vh;
+    position: relative;
+}
+
+#promo_banner > .clearfix{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#promo_banner > .clearfix > div:first-child{
+    width: 70%;
+    padding-right: 30%;
+}
+
+#promo_banner > .clearfix > div:last-child{
+    width: 30%;
+}
+
+#promo_banner > .clearfix h2{
+    font-size: 2.5vw;
+}
+
+#promo_banner > .clearfix button{
+    width: 100%;
+}
+
+/* Promo banner */
