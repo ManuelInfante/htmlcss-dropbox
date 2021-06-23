@@ -120,6 +120,10 @@ div.middle{
 .light-gray_bg{
     background-color: #F5F5F5;
 }
+
+.black_bg{
+    background-color: black;
+}
 /* / BACKGROUND COLOR */
 
 /* TEXT COLOR */
@@ -563,3 +567,50 @@ div.question:hover > div.answer{
 }
 
 /* / FAQ */
+
+/* Footer */
+
+#sitemap{
+    padding: 10vh 0;
+}
+
+#sitemap .menu{
+    width: calc((100% / 4) - 5vw);
+    padding-right: 5vw;
+}
+
+#sitemap h3{
+    color: white;
+    font-size: 1.5vw;
+    padding-bottom: 3vh;
+}
+
+#sitemap nav li{
+    line-height: 5vh;
+}
+
+#sitemap nav li a{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+
+footer hr{
+    border: 1px solid rgb(109, 109, 109);
+    width: 10%;
+}
+
+#language{
+    color: rgb(61, 61, 61);
+    padding: 7vh 0 5vh;
+}
+
+#language a{
+    color: rgb(87, 87, 87);
+    text-decoration: none;
+}
+
+#language i:last-child{
+    vertical-align: middle;
+}
+/* /Footer */
