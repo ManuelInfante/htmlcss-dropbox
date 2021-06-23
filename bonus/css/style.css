@@ -272,10 +272,29 @@ div.jumbo_box{
 }
 
 .jumbotron .arrow-to{
-    font-size: 3vw;
-    color: black;
+    display: inline-block;
+    border: 2px solid black;
+    height: 5vw;
+    width: 5vw;
+    line-height: 5vw;
+    text-align: center;
+    border-radius: 50%;
+    transition: transform .4s;
 }
 
+.jumbotron .arrow-to:hover{
+    transform: scale(1.1);
+}
+
+.jumbotron .arrow-to > a{
+    font-size: 3vw;
+    color: black;
+    vertical-align: middle;
+}
+
+.jumbotron .arrow-to:hover > a{
+    color: #0361FF;
+}
 /* / Jumbotron */
 
 /* Pricing table section */
@@ -362,6 +381,10 @@ div.plan_content{
 
     div.cta_plan > p > a{
         color: #0361FF;
+    }
+
+    div.cta_plan > p > a:hover{
+        color: #003496;
     }
 
     /* HR */
@@ -649,6 +672,10 @@ div.question:hover > div.answer{
     list-style: none;
     color: white;
     text-decoration: none;
+}
+
+#sitemap nav li a:hover{
+    text-decoration: underline;
 }
 
 footer hr{
