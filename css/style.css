@@ -501,4 +501,65 @@ div.discover_clients_cta > p{
     width: 100%;
 }
 
-/* Promo banner */
+/* / Promo banner */
+
+/* FAQ */
+
+#faq{
+    padding: 15vh 0;
+}
+
+#faq h3{
+    font-size: 2.5vw;
+    padding-bottom: 10vh;
+}
+
+/* Faq rows */
+div.question{
+    border-top: 1px solid gray;
+    padding: 5vh 0;
+}
+
+div.question:last-child{
+    border-bottom: 1px solid gray;
+}
+
+div.question > div:first-child{
+    width: 90%;
+}
+
+div.question > div:nth-child(2){
+    padding-right: 2vw;
+    width: 10%;
+    text-align: right;
+}
+
+div.question > div.answer{
+    padding-top: 5vh;
+    display: none;
+}
+
+div.question p{
+    font-weight: 700;
+    font-size: 1.2vw;
+}
+
+/* Hover Faq */
+
+div.question > div:nth-child(2) > i:last-child{
+    display: none;
+}
+
+div.question:hover i:first-child{
+    display: none;
+}
+
+div.question:hover > div:nth-child(2) > i:last-child{
+    display: block;
+}
+
+div.question:hover > div.answer{
+    display:block;
+}
+
+/* / FAQ */
