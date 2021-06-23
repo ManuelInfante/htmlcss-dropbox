@@ -1,0 +1,676 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* COMMON */
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.float_sx{
+    float: left;
+}
+
+.float_dx{
+    float: right;
+}
+
+/* GRANDEZZE */
+
+.w_90{
+    width: 90%;
+    margin: auto;
+}
+
+.w_80{
+    width: 80%;
+    margin: auto;
+}
+
+div.side{
+    width: calc((100% / 3) - 2.5vw);
+}
+
+div.side:first-child{
+    margin-right: 2.5vw;
+}
+
+div.side:last-child{
+    margin-left: 2.5vw;
+}
+
+div.middle{
+    width: calc((100% / 3) - 2.5vw);
+    margin: 0 1.25vw;
+}
+
+/* BUTTON */
+
+.button_style{
+    border: none;
+    transition: transform .4s;
+    padding: 10px 20px;
+}
+
+.button_style:hover{
+    transform: scale(1.1);
+}
+
+.button_style > a{
+    font-size: 1.1vw;
+    text-decoration: none;
+}
+
+.button_style.light-blue_bg > a{
+    color: white;
+}
+
+.button_style.white_bg > a{
+    color: black;
+}
+/* / BUTTON */
+
+/* BACKGROUND COLOR */
+.white_bg{
+    background-color: white;
+}
+
+.light-blue_bg{
+    background-color: #0361FF;
+}
+
+.blue_bg{
+    background-color: #0E2381;
+}
+
+.green_bg{
+    background-color: #A2D39B;
+}
+
+.bordeaux_bg{
+    background-color: #62092B;
+}
+
+.sugar-paper_bg{
+    background-color: #B4D0E7;
+}
+
+.light-red_bg{
+    background-color: #FF1C1C;
+}
+
+.dark-red_bg{
+    background-color: #D5011F;
+}
+
+.yellow_bg{
+    background-color: #FFD82F;
+}
+
+.light-gray_bg{
+    background-color: #F5F5F5;
+}
+
+.black_bg{
+    background-color: black;
+}
+/* / BACKGROUND COLOR */
+
+/* TEXT COLOR */
+
+.bordeaux_text{
+    color: #62092B;
+}
+
+.light-blue_text{
+    color: #0361FF;
+}
+
+/* / TEXT COLOR */
+
+/* /COMMON */
+
+
+/* HEADER */
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    padding: 0 1%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+header  section{
+    line-height: 80px;
+}
+
+header .logo{
+    height: 20%;
+    vertical-align: middle;
+}
+
+header nav{
+    display: inline-block;
+    margin: 0 1vw;
+}
+
+header nav li{
+    display: inline-block;
+    margin: 0 1vw;
+    vertical-align: middle;
+    border-bottom: 2px solid transparent;
+}
+
+header nav li a, .subnav > button{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2vw;
+    font-weight: 400;
+}
+
+header nav li:hover{
+    border-bottom: 2px solid black;
+}
+
+/* SUBNAV */
+
+.subnav{
+    position: relative;
+}
+
+.subnav button{
+    border: none;
+    background-color: transparent;
+}
+
+.subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 10vw;
+    text-align: left;
+    background-color: white;
+    z-index: 1;
+    border: 1px solid black;
+}
+
+.subnav:hover .subnav-content {
+    display: block;
+    line-height: 60px;
+    padding: 0 40%;
+}
+
+.subnav .subnav-content a{
+    display: block;
+    width: 100%;
+}
+
+.subnav:hover .subnav-content a:hover{
+      text-decoration: underline;
+}
+
+/* /SUBNAV */
+
+/* / HEADER */
+
+/* Jumbotron */
+
+.jumbotron h1{
+    font-size: 5vw;
+    padding-top: 15vh;
+}
+
+.jumbotron .text_box{
+    width: 35%;
+}
+
+.jumbotron .img_box{
+    width: 65%;
+}
+
+.jumbotron .img_box > img{
+    width: 100%;
+}
+
+div.jumbo_box{
+    position: relative;
+    bottom: -80px;
+}
+
+/* Text_box */
+
+.jumbo_box > .text_box{
+    padding-right: 6%;
+    text-align: left;
+}
+
+.jumbotron p:first-of-type{
+    font-size: 1.1vw;
+    font-weight: 500;
+    margin: 0 0 6%;
+}
+
+.jumbotron p:last-of-type{
+    font-size: 0.9vw;
+    margin: 2% 0 13%;
+}
+
+.jumbotron .arrow-to{
+    font-size: 3vw;
+    color: black;
+}
+
+/* / Jumbotron */
+
+/* Pricing table section */
+
+#pricing_table h2{
+    padding: 20vh 0 5vh;
+    font-size: 3vw;
+}
+
+#pricing_table form > label{
+    padding-right: 1vw;
+}
+
+/* Pricing columns style*/
+
+.plan_box > .clearfix{
+    padding: 5vh 0;
+}
+
+div.plan_column{
+    border: 1px solid gray;
+}
+
+/* Pricing column*/
+
+div.target_plan{
+    text-align: center;
+    padding: 2vh 0;
+    border-bottom: 1px solid gray;
+    font-size: 1.2vw;
+} 
+/* PLAN COLUMN CONTENT */
+div.target_plan{
+    text-align: center;
+    padding: 2vh 0;
+    border-bottom: 1px solid gray;
+    font-size: 1.2vw;
+} 
+
+div.plan_content{
+    padding: 2.5vw 2vw;
+}
+    /* Plan specifiche: nome, prezzo, ricorrenza */
+    div.plan_specs > h3{
+        font-size: 2vw;
+    }
+
+    div.plan_specs p:nth-child(2){
+        font-size: 1.2vw;
+        font-weight: 700;
+        padding: 2vh 0 1vh;
+    }
+
+    div.plan_specs p:last-child:not(#enterprise .plan_specs > p:last-child){
+        color: gray;
+        font-size: 1vw;
+    }
+
+    /* Features */
+    div.plan_features{
+        padding: 4vh 0;
+    }
+
+    div.plan_features > .clearfix{
+        padding: 2vh 0;
+    }
+
+    div.plan_content .clearfix > div:first-child{
+        width: 6%;
+    }
+
+    div.plan_content .clearfix > div:last-child{
+        width: 94%;
+    }
+
+    /* CTA plan */
+    div.cta_plan > button{
+        width: 100%;
+    }
+
+    div.cta_plan > p{
+        padding: 6vh 0 4vh;
+    }
+
+    div.cta_plan > p > a{
+        color: #0361FF;
+    }
+
+    /* HR */
+
+    div.plan_content hr{
+        border: 1px solid rgb(209, 209, 209);
+        width: 20%;
+    }
+
+    /* Hotpoints */
+    div.hotpoints_plan{
+        padding: 5vh 0;
+        height: 45vh;
+        overflow-y: scroll;
+    }
+
+    div.hotpoints_plan h4{
+        font-size: 1.3vw;
+        padding: 2vh 0;
+    }
+
+    div.hotpoints_plan ul li{
+        list-style: none;
+        padding: 2vh 0;
+    }
+
+    div.hotpoints_plan ul li i{
+        color: #0361FF;
+    }
+
+    /* Enterprice plan section */
+
+    #enterprise .plan_specs{
+        width: 60%;
+    }
+
+    #enterprise .cta_plan{
+        width: 40%;
+    }
+
+    /* / Pricing column content*/
+
+/* /Pricing columns style*/
+
+/* / Pricing table section */
+
+/* PARTNER CTA SECTION*/
+
+#partner_cta{
+    padding: 25vh 0 15vh;
+}
+
+#partner_cta .img_box{
+    width: 50%;
+}
+
+#partner_cta .cta_text{
+    width: 50%;
+}
+
+#partner_cta .img_box > img{
+    width: 100%;
+}
+
+#partner_cta .cta_text{
+    padding: 3vw;
+}
+
+#partner_cta .cta_text > h3{
+    font-size: 2vw;
+}
+
+#partner_cta .cta_text > p{
+    padding: 4vh 0 3vh;
+}
+
+div.cta_text .button_style.white_bg{
+    border: 2px solid black;
+}
+/* / PARTNER CTA SECTION*/
+
+/* DROPBOX FEATURES */
+
+#dropbox_features img{
+    width: 100%;
+}
+
+#dropbox_features h2{
+    font-size: 3vw;
+    padding-bottom: 10vh;
+}
+
+#dropbox_features div.row{
+    padding-bottom: 15vh;
+}
+
+#dropbox_features .row h3{
+    font-size: 2vw;
+    padding-bottom: 5vh;
+}
+
+#dropbox_features .row p{
+    font-size: 1.2vw;
+}
+
+#dropbox_features .row p > span{
+    text-decoration: underline;
+}
+
+/* /DROPBOX FEATURES */
+
+
+/* Behaviors section */
+
+div.discover_clients_cta > h2{
+    width: 50%;
+    font-size: 5vh;
+}
+
+div.discover_clients_cta > p{
+    padding: 5vh 0;
+}
+
+/* LOGOS and review section */
+#behaviors .logos{
+    width: 30vw;
+}
+
+#behaviors .logos .logo_container{
+    width: 15vw;
+    height: 15vw;
+    line-height: 15vw;
+    text-align: center;
+}
+
+#behaviors .logos .logo_container > img{
+    width: 55%;
+    vertical-align: middle;
+    filter: invert(1);
+}
+
+#behaviors .review{
+    width: calc(100% - 60vw);
+    height: 30vw;
+    padding: 4vw 5vh;
+    overflow-y: scroll;
+}
+
+#behaviors .review > img{
+    height: 5vh;
+    margin-bottom: 4vh;
+}
+
+#behaviors .review hr{
+    border-color: lightgray;
+    width: 10%;
+}
+
+#behaviors .review > p:first-of-type{
+    padding: 8vh 0 9vh;
+    font-size: 1.3vw;
+}
+
+#behaviors .review > p:last-of-type{
+    font-size: 1.5vw;
+}
+/* / Behaviors section */
+
+/* Promo banner */
+
+#promo_banner{
+    height: 30vh;
+    position: relative;
+}
+
+#promo_banner > .clearfix{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#promo_banner > .clearfix > div:first-child{
+    width: 70%;
+    padding-right: 30%;
+}
+
+#promo_banner > .clearfix > div:last-child{
+    width: 30%;
+}
+
+#promo_banner > .clearfix h2{
+    font-size: 2.5vw;
+}
+
+#promo_banner > .clearfix button{
+    width: 100%;
+}
+
+/* / Promo banner */
+
+/* FAQ */
+
+#faq{
+    padding: 15vh 0;
+}
+
+#faq h3{
+    font-size: 2.5vw;
+    padding-bottom: 10vh;
+}
+
+/* Faq rows */
+div.question{
+    border-top: 1px solid gray;
+    padding: 5vh 0;
+}
+
+div.question:last-child{
+    border-bottom: 1px solid gray;
+}
+
+div.question > div:first-child{
+    width: 90%;
+}
+
+div.question > div:nth-child(2){
+    padding-right: 2vw;
+    width: 10%;
+    text-align: right;
+}
+
+div.question > div.answer{
+    padding-top: 5vh;
+    display: none;
+}
+
+div.question p{
+    font-weight: 700;
+    font-size: 1.2vw;
+}
+
+/* Hover Faq */
+
+div.question > div:nth-child(2) > i:last-child{
+    display: none;
+}
+
+div.question:hover i:first-child{
+    display: none;
+}
+
+div.question:hover > div:nth-child(2) > i:last-child{
+    display: block;
+}
+
+div.question:hover > div.answer{
+    display:block;
+}
+
+/* / FAQ */
+
+/* Footer */
+
+#sitemap{
+    padding: 10vh 0;
+}
+
+#sitemap .menu{
+    width: calc((100% / 4) - 5vw);
+    padding-right: 5vw;
+}
+
+#sitemap h3{
+    color: white;
+    font-size: 1.5vw;
+    padding-bottom: 3vh;
+}
+
+#sitemap nav li{
+    line-height: 5vh;
+}
+
+#sitemap nav li a{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+
+footer hr{
+    border: 1px solid rgb(109, 109, 109);
+    width: 10%;
+}
+
+#language{
+    color: rgb(61, 61, 61);
+    padding: 7vh 0 5vh;
+}
+
+#language a{
+    color: rgb(87, 87, 87);
+    text-decoration: none;
+}
+
+#language a:hover{
+    text-decoration: underline
+}
+
+#language i:last-child{
+    vertical-align: middle;
+}
+/* /Footer */
